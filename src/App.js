@@ -39,7 +39,7 @@ function App() {
         <div className="container my-2">
           <Routes>
             <Route
-              path="/"
+              path="/home"
               element={
                 <Myform
                   showAlert={showAlert}
@@ -52,7 +52,7 @@ function App() {
               path="/about"
               element={<About showAlert={showAlert} mode={mode} />}
             />
-            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="*" element={<Navigate to="/home" />} />
           </Routes>
         </div>
       </BrowserRouter>
